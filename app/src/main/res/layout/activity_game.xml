@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@color/primaryColor">
+
+    <TextView
+        android:id="@+id/turn_viewer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Sajib's turn"
+        android:background="@color/secondaryColor"
+        android:textColor="@color/primaryTextColor"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.60"
+        android:orientation="vertical"
+        android:layout_margin="40sp">
+
+        <LinearLayout
+            style="@style/BoardRowStyle">
+
+            <Button
+                android:id="@+id/cell_00"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+            <Button
+                android:id="@+id/cell_01"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+            <Button
+                android:id="@+id/cell_02"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/BoardRowStyle">
+
+            <Button
+                android:id="@+id/cell_10"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+            <Button
+                android:id="@+id/cell_11"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+            <Button
+                android:id="@+id/cell_12"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/BoardRowStyle">
+
+            <Button
+                android:id="@+id/cell_20"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+            <Button
+                android:id="@+id/cell_21"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+            <Button
+                android:id="@+id/cell_22"
+                style="@style/BoardCellStyle"
+                android:onClick="clickCell" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:background="@color/secondaryColor">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/player_one_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:text="Sajib"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player_one_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player_one_name"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="10sp"
+                android:text="3"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/rounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp"
+                android:text="Rounds"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/rounds_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/rounds"
+                android:layout_marginTop="20sp"
+                android:text="5"
+                android:textColor="@color/secondaryTextColor"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/player_two_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="Ayan"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/player_two_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/player_two_name"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:text="2"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="35sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
